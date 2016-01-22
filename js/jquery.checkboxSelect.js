@@ -76,7 +76,7 @@
 				"height":"100px",
 				"width":options.width+20,
 				"z-index":1000,
-				"top":$div.height(),
+				"top":$div.outerHeight(),
 				"left":0,
 				"display":"none"
 			});

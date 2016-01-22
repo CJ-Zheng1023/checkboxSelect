@@ -8,13 +8,82 @@
   <meta name="Description" content="">
   <title>Document</title>
   <link href="css/jquery.checkboxSelect.css" rel="stylesheet">
+     <style>
+         html,body{
+             margin: 0;
+             padding: 0;
+             font-size: 16px;
+         }
+         .main{
+             width: 1080px;
+             margin: 30px auto;
+             text-align: center;
+
+         }
+         .main .section{
+             margin-bottom: 80px;
+         }
+         .main .section h1{
+             font-size: 1.5em;
+         }
+
+     </style>
  </head>
  <body>
-	<select id="select">
-		<option>123</option>
-		<option>456</option>
-		<option>789</option>
-	</select>
+    <div class="main">
+        <div class="section">
+            <h1>1.显示选中项</h1>
+            <p>
+                <select id="select1">
+                    <option>111</option>
+                    <option>222</option>
+                    <option>333</option>
+                </select>
+            </p>
+        </div>
+        <div class="section">
+            <h1>2.不显示选中项</h1>
+            <p>
+                <select id="select2">
+                    <option>111</option>
+                    <option>222</option>
+                    <option>333</option>
+                </select>
+            </p>
+        </div>
+        <div class="section">
+            <h1>3.鼠标移入选择框显示下拉框</h1>
+            <p>
+                <select id="select3">
+                    <option>111</option>
+                    <option>222</option>
+                    <option>333</option>
+                </select>
+            </p>
+        </div>
+        <div class="section">
+            <h1>4.不显示全选选项</h1>
+            <p>
+                <select id="select4">
+                    <option>111</option>
+                    <option>222</option>
+                    <option>333</option>
+                </select>
+            </p>
+        </div>
+        <div class="section">
+            <h1>4.宽度设置</h1>
+            <p>
+                <select id="select5">
+                    <option>111</option>
+                    <option>222</option>
+                    <option>333</option>
+                </select>
+            </p>
+        </div>
+
+    </div>
+
 
 
 
@@ -22,9 +91,21 @@
  <script src="js/jquery.checkboxSelect.js"></script>
  <script>
 	$(function(){
-		$("#select").checkboxSelect({
+		$("#select1").checkboxSelect({
 			showItem:false
 		});
+        $("#select2").checkboxSelect({
+            showItem:true
+        });
+        $("#select3").checkboxSelect({
+            mouseOver:true
+        });
+        $("#select4").checkboxSelect({
+            selectAll:false
+        });
+        $("#select5").checkboxSelect({
+            width:300
+        });
 	})
  </script>
  </body>
